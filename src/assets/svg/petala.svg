@@ -1,0 +1,28 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  width="200"
+  height="200"
+>
+  <!-- Definições de gradientes para efeito de profundidade -->
+  <defs>
+    <radialGradient id="petalGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="10%" style="stop-color:#ff9898;" />
+      <stop offset="40%" style="stop-color: #ff8b9e;" />
+      <stop offset="100%" style="stop-color: #fb2d68;" />
+    </radialGradient>
+  </defs>
+
+  <!-- Pétala 4 -->
+  <path
+    d="M100,80
+       C105,65 120,75 110,100
+       Q100,115 100,105
+       Q100,115 90,100
+       C80,75 95,65 100,80"
+    fill="url(#petalGradient)"
+    transform="rotate(150 100 100)"
+  />
+
+
+</svg>

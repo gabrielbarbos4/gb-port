@@ -1,0 +1,315 @@
+:host {
+  background-color: black !important;
+}
+
+.background-drop-filter {
+  background-color: var(--clr-primary-dark);
+}
+
+.hero-container {
+  width: 100%;
+  height: 100dvh;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 05) 0px 54px 55px, rgba(0, 0, 0, 0.55) 0px -12px 30px, rgba(0, 0, 0, 0.55) 0px 4px 6px, rgba(0, 0, 0, 0.55) 0px 12px 13px, rgba(0, 0, 0, 0.55) 0px -3px 5px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+
+  .next-section {
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+
+    .mdi {
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 50px;
+    }
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    //font-family: 'Great Vibes', cursive;
+    //font-family: 'Cinzel', serif;
+    //font-family: 'Noto Serif', serif;
+    font-family: 'Philosopher', sans-serif;
+
+    h1 {
+      font-size: 56px;
+      font-weight: bold;
+      color: white;
+    }
+
+    h2 {
+      font-weight: bold;
+      color: white;
+      font-size: 36px;
+    }
+  }
+
+  .background-image {
+    height: 100%;
+    width: 100%;
+    filter: brightness(50%);
+  }
+
+  .petal {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    img {
+      transform: scale(2);
+    }
+
+    &:nth-child(1) {
+      left: 20%;
+      animation: petalAnimation 30s linear infinite;
+      animation-delay: -7s;
+    }
+
+    &:nth-child(2) {
+      left: 50%;
+      animation: petalAnimation 40s linear infinite;
+      animation-delay: -5s;
+    }
+
+    &:nth-child(3) {
+      left: 70%;
+      animation: petalAnimation 40s linear infinite;
+      animation-delay: 0s;
+    }
+
+    &:nth-child(4) {
+      left: 0%;
+      animation: petalAnimation 30s linear infinite;
+      animation-delay: -5s;
+    }
+
+    &:nth-child(5) {
+      left: 85%;
+      animation: petalAnimation 36s linear infinite;
+      animation-delay: -10s;
+    }
+
+    &:nth-child(6) {
+      left: 0%;
+      animation: petalAnimation 24s linear infinite;
+    }
+
+    &:nth-child(7) {
+      left: 15%;
+      animation: petalAnimation 28s linear infinite;
+    }
+
+    &:nth-child(8) {
+      left: 60%;
+      animation: petalAnimation 30s linear infinite;
+    }
+
+    &:nth-child(9) {
+      left: 20%;
+      animation: petalAnimation 30s linear infinite;
+    }
+
+    &:nth-child(10) {
+      left: 20%;
+      animation: petalAnimation 30s linear infinite;
+    }
+
+    &:nth-child(11) {
+      left: 20%;
+      animation: petalAnimation 30s linear infinite;
+    }
+
+    &:nth-child(12) {
+      left: 35%;
+      animation: petalAnimation 30s linear infinite;
+    }
+
+    &:nth-child(13) {
+      left: 35%;
+      animation: petalAnimation 25s linear infinite;
+      animation-delay: -4s;
+    }
+
+    &:nth-child(14) {
+      left: 45%;
+      animation: petalAnimation 40s linear infinite;
+      animation-delay: -4s;
+    }
+
+    &:nth-child(15) {
+      left: 55%;
+      animation: petalAnimation 50s linear infinite;
+    }
+
+    &:nth-child(16) {
+      left: 60%;
+      animation: petalAnimation 45s linear infinite;
+      animation-delay: -6s;
+    }
+
+    &:nth-child(17) {
+      left: 70%;
+      animation: petalAnimation 45s linear infinite;
+      animation-delay: -2s;
+    }
+
+    &:nth-child(18) {
+      left: 90%;
+      animation: petalAnimation 55s linear infinite;
+    }
+
+    &:nth-child(19) {
+      left: 80%;
+      animation: petalAnimation 55s linear infinite;
+      animation-delay: -10s;
+    }
+
+    &:nth-child(20) {
+      left: 10%;
+      animation: petalAnimation 55s linear infinite;
+      animation-delay: -4s;
+    }
+
+    &:nth-child(21) {
+      left: 95%;
+      animation: petalAnimation 60s linear infinite;
+      animation-delay: -4s;
+    }
+
+    &#ls-1 {
+      left: 10%;
+      animation: petalAnimation 55s linear infinite;
+      animation-delay: -4s;
+    }
+
+    &#ls-2 {
+      left: 95%;
+      animation: petalAnimation 60s linear infinite;
+      animation-delay: -4s;
+    }
+
+    &:nth-child(22) {
+      left: 20%;
+      animation: petalAnimation 65s linear infinite;
+    }
+
+    &:last-child {
+      left: 20%;
+      animation: petalAnimation 55s linear infinite;
+    }
+
+    &#ls-3 {
+      left: 20%;
+      animation: petalAnimation 55s linear infinite;
+    }
+  }
+
+  .petal-2 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    img {
+      transform: scale(3);
+    }
+
+    &#lsg-1 {
+      left: 40%;
+      animation: petalAnimation 60s linear infinite;
+      animation-delay: -15s;
+    }
+
+    &#lsg-2 {
+      left: 70%;
+      animation: petalAnimation 30s linear infinite;
+      animation-delay: -9s;
+    }
+
+    &#lsg-3 {
+      left: 53%;
+      animation: petalAnimation 65s linear infinite;
+      animation-delay: -2s;
+    }
+
+    &#lsg-4 {
+      left: 30%;
+      animation: petalAnimation 47s linear infinite;
+      animation-delay: -20s;
+    }
+
+    &#lsg-5 {
+      left: 85%;
+      animation: petalAnimation 60s linear infinite;
+      animation-delay: -12s;
+    }
+
+    &#lsg-6 {
+      left: 40%;
+      animation: petalAnimation 80s linear infinite;
+    }
+
+    &#lsg-7 {
+      left: 5%;
+      animation: petalAnimation 28s linear infinite;
+    }
+
+    &#lsg-8 {
+      left: 65%;
+      animation: petalAnimation 70s linear infinite;
+    }
+  }
+}
+
+@keyframes petalAnimation {
+  0% {
+    opacity: 0;
+    top: 10%;
+    transform: translateX(20px) rotate(0deg);
+  }
+
+  10% {
+    opacity: 0.75;
+  }
+
+  20% {
+    transform: translateX(-20px) rotate(45deg);
+  }
+
+  40% {
+    transform: translateX(-20px) rotate(90deg);
+  }
+
+  60% {
+    transform: translateX(20px) rotate(180deg);
+  }
+
+  80% {
+    transform: translateX(-20px) rotate(180deg);
+  }
+
+  100% {
+    opacity: 0.5;
+    top: 120%;
+    transform: translateX(-20px) rotate(225deg);
+  }
+}
